@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Registry</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <h1>🏥 Patient Registration</h1>
+
+        <form action="/registerPatient" method="POST">
+
+            <label>Patient Name</label>
+            <input type="text" name="name" required>
+
+            <label>Admission Date</label>
+            <input type="datetime-local" name="date" required>
+
+            <label>Illness / Diagnosis</label>
+            <input type="text" name="illness" required>
+
+            <button type="submit">Register Patient</button>
+
+        </form>
+
+        <a href="/patientDetails">
+            <button class="secondary-btn">View Patient Details</button>
+        </a>
+
+    </div>
+</body>
+
+</html>
